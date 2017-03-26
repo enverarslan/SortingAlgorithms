@@ -5,7 +5,7 @@
 enum Tur { sirali = 1, ters_sirali = 2, rastgele = 3 };
 
 // Dizi boyutu global.
-int boyut = 100;
+int boyut = 100000;
 //  Ters sıralı dizi olacak.
 Tur tur = ters_sirali;
 
@@ -72,11 +72,17 @@ int main(){
 
     unsigned long long int adim_degisim, adim_karsilastirma, toplam_degisim=0, toplam_karsilastirma = 0;
 
+    time_t baslangic, bitis;
+
+    double toplam_sure;
+
     //printf("Baslayalim, dizinin hali:\n");
 
     //diziYaz(dizi);
 
     printf("\n----------------\n");
+
+    time(&baslangic);
 
 
     for (i = 0; i < boyut-1; i++) {
@@ -111,8 +117,12 @@ int main(){
 
     }
 
-    printf("----------------\n%d elemanli dizi %d adimda %llu karsilastirma ve %llu degistirme ile siralandi.\n----------------\n", boyut, i+1, toplam_karsilastirma, toplam_degisim);
+    time(&bitis);
 
+    toplam_sure = difftime(bitis, baslangic);
+
+    printf("----------------\n%d elemanli dizi %d adimda %llu karsilastirma ve %llu degistirme ile siralandi, %.2f saniye surdu.\n----------------\n",
+           boyut, i+1, toplam_karsilastirma, toplam_degisim, toplam_sure);
     //diziYaz(dizi);
 
     return  0;
