@@ -1,2 +1,2 @@
 # SortingAlgorithms
-Sorting Algorithms with C
+Implement Sorting Algorithms with C Programming Language
