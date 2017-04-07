@@ -5,9 +5,9 @@
 enum Tur { sirali = 1, ters_sirali = 2, rastgele = 3 };
 
 // Dizi boyutu global.
-int boyut = 100;
+int boyut = 100000;
 //  Ters sıralı dizi olacak.
-Tur tur = ters_sirali;
+enum Tur tur = ters_sirali;
 
 
 /**
@@ -101,7 +101,7 @@ int main(){
 
         dizi[j] = gecici;
 
-        printf("%d. adim | %llu karsilastirma | %llu yer degistirme\n", i, adim_karsilastirma, adim_degisim);
+        //printf("%d. adim | %llu karsilastirma | %llu yer degistirme\n", i, adim_karsilastirma, adim_degisim);
 
     }
 

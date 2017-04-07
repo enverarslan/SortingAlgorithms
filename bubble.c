@@ -6,9 +6,9 @@
 enum Tur { sirali = 1, ters_sirali = 2, rastgele = 3 };
 
 // Dizi boyutu global.
-int boyut = 1000000;
+int boyut = 100000;
 //  Ters sıralı dizi olacak.
-Tur tur = ters_sirali;
+enum Tur tur = ters_sirali;
 
 /**
  * Belirtilen boyut ve türde dizi oluştur ve adresini döndür.
@@ -129,7 +129,7 @@ int main(){
             //printf("\n");
         }
 
-        printf("%d. adim | %llu karsilastirma | %llu yer degistirme\n", i + 1, adim_karsilastirma, adim_degisim);
+        //printf("%d. adim | %llu karsilastirma | %llu yer degistirme\n", i + 1, adim_karsilastirma, adim_degisim);
 
         //diziYaz(dizi);
 

@@ -8,7 +8,7 @@ void merge(int *, int, int, int);
 enum Tur { sirali = 1, ters_sirali = 2, rastgele = 3 };
 
 // Dizi boyutu global.
-int boyut = 100000000;
+int boyut = 100000;
 //  Ters sıralı dizi olacak.
 enum Tur tur = ters_sirali;
 
