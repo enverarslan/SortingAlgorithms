@@ -6,7 +6,7 @@ Counting comparions and swaps, analyzing for already sorted(ascending and descen
 Note: Using big sized array may cause memory allocation and segmentation fault errors.
 Because some algorithms use recursion and these codes are not written for production. Its all about learning.
 
-## Lists of Algorithms
+## List of Algorithms
 - [x] Bubble
 - [x] Selection
 - [x] Insertion
